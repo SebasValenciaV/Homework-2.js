@@ -41,7 +41,7 @@ const concatenarNombres = (nombre1, nombre2, nombre3) => {
   let nombre1 = "Sebastian";
   const nombre2 = "Valencia";
   let nombre3 = "Vargas";
-  console.log(`Nombres concatenados: ${concatenarNombres(nombre1, nombre2, nombre3)}`); // Imprime "Nombres concatenados: Juan María Pedro"
+  console.log(`Nombres concatenados: ${concatenarNombres(nombre1, nombre2, nombre3)}`); 
   
 
   // Ejemplo de función arrow que genera un número aleatorio entre un rango dado
@@ -54,6 +54,6 @@ const generarNumeroAleatorio = (min, max) => {
   };
   
   const numeroAleatorio = generarNumeroAleatorio(3, 33);
-  console.log(`The new random number is: ${numeroAleatorio}`); // Imprime un número aleatorio entre 1 y 100
+  console.log(`The new random number is: ${numeroAleatorio}`); 
   
   
