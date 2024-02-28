@@ -14,16 +14,16 @@ const obtenerFechaActual = () => {
   console.log(`Time of results: ${obtenerFechaActual()}`);
   
   // Ejemplo de función arrow con un parámetro
-const calcularCuadrado = (num) => {
+let calcularCuadrado = (num) => {
     return num * num;
   };
   
-  const numero = 5;
+  let numero = 5;
   console.log(`El cuadrado de ${numero} es: ${calcularCuadrado(numero)}`); // Imprime "El cuadrado de 5 es: 25"
   
   // Ejemplo de función arrow con más de dos parámetros y métodos propios de JavaScript
-const calcularPromedio = (num1, num2, num3) => {
-    const suma = num1 + num2 + num3;
+let calcularPromedio = (num1, num2, num3) => {
+    let suma = num1 + num2 + num3;
     return suma / 3;
   };
   
@@ -32,13 +32,28 @@ const calcularPromedio = (num1, num2, num3) => {
   let num3 = 30;
   
   console.log(`El promedio de ${num1}, ${num2} y ${num3} es: ${calcularPromedio(num1, num2, num3)}`); // Imprime "El promedio de 10, 20 y 30 es: 20"
+  
   // Ejemplo de función arrow con más de dos parámetros que realiza una concatenación de strings
 const concatenarNombres = (nombre1, nombre2, nombre3) => {
     return `${nombre1} ${nombre2} ${nombre3}`;
   };
   
-  const nombre1 = "Juan";
-  const nombre2 = "María";
-  const nombre3 = "Pedro";
+  let nombre1 = "Sebastian";
+  const nombre2 = "Valencia";
+  let nombre3 = "Vargas";
   console.log(`Nombres concatenados: ${concatenarNombres(nombre1, nombre2, nombre3)}`); // Imprime "Nombres concatenados: Juan María Pedro"
+  
+
+  // Ejemplo de función arrow que genera un número aleatorio entre un rango dado
+  //la funcion de flecha recibe dos parametros min, max
+  //math.random() genera un nymero decima entre 0 - 1
+  //math.floor()redondea el numero hacia abajo asegurado un numero entero
+  //+min = ajusta el resultado para que este dentro del rango agregando el valor minimo
+const generarNumeroAleatorio = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  };
+  
+  const numeroAleatorio = generarNumeroAleatorio(3, 33);
+  console.log(`The new random number is: ${numeroAleatorio}`); // Imprime un número aleatorio entre 1 y 100
+  
   
